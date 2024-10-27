@@ -1,12 +1,23 @@
 import React from 'react'
-import {Article, Brand, Cta, Feature, Navbar} from './Components'
+import './App.css'
+import {Blog, Features, Footer, Header, Possibility, WhatGPT3} from './Containers'
+import {Cta, Brand, Navbar} from './Components'
 
 const App = () => {
   return (
-    <>
-      <h1>GPT-3</h1>
-
-    </>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar/>
+        <Header/>
+      </div>
+      <Brand/>
+      <WhatGPT3/>
+      <Features/>
+      <Possibility/>
+      <Cta/>
+      <Blog/>
+      <Footer/>
+    </div>
   )
 }
 
